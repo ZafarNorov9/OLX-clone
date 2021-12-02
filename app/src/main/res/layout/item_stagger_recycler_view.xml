@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view_stagger"
+    android:layout_margin="5dp"
+    app:cardElevation="0dp"
+    android:layout_width="wrap_content"
+    app:cardCornerRadius="8dp"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/image_id"
+        android:src="@drawable/headphone"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/item_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:singleLine="false"
+            android:scrollHorizontally="true"
+            android:ellipsize="end"
+            android:layout_gravity="center"
+        android:text="RUNMUS Gaming Headset"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+
+           <ImageView
+               android:id="@+id/heart_button_btn"
+               android:padding="5dp"
+               android:onClick="on_like_click"
+               android:layout_marginTop="8dp"
+               android:layout_marginRight="10dp"
+               android:src="@drawable/ic_like_change"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:id="@+id/price"
+        android:layout_marginLeft="10dp"
+        android:text="110 y.e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/location"
+        android:text="Toshkent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:id="@+id/last_seen"
+        android:text="Bugun 14:06 da"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

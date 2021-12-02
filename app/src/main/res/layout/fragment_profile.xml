@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FEFEFE"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.ProfileFragment">
+
+   <LinearLayout
+       android:layout_marginLeft="10dp"
+       android:orientation="vertical"
+       android:layout_marginTop="50dp"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <ImageView
+               android:src="@drawable/acc"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+           <View
+               android:layout_weight="1"
+               android:layout_width="0dp"
+               android:layout_height="10dp" />
+
+           <TextView
+               android:id="@+id/id_tahrirlash"
+               android:layout_marginRight="10dp"
+               android:textSize="13sp"
+               android:textColor="#002E32"
+               android:text="TAHRIRLASH"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+
+       <TextView
+           android:textColor="#002E32"
+           android:textSize="30sp"
+           android:fontFamily="@font/poppins_semibold"
+           android:layout_marginTop="15dp"
+           android:text="Salom, 998901251949!"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+       <TextView
+           android:textColor="#B2B6B7"
+           android:text="ID: 67523411"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+         <TextView
+             android:layout_marginTop="13dp"
+           android:textColor="#B2B6B7"
+           android:text="Sizning hamyoninggiz: 0.00 so'm "
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+         <TextView
+           android:textColor="#B2B6B7"
+           android:text="Bonuslar: 0.00 bonus"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+       <ImageView
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="10dp"
+           android:src="@drawable/btn_new_ad"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+       <TextView
+           android:textColor="#0B302F"
+           android:textSize="20sp"
+           android:fontFamily="@font/poppins_semibold"
+           android:layout_marginTop="15dp"
+           android:text="Sizning e'lonlaringiz"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+     <LinearLayout
+         android:gravity="center_vertical"
+         android:layout_marginTop="8dp"
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <TextView
+             android:layout_weight="1"
+             android:textSize="17sp"
+             android:text="Faol e'lonlar"
+             android:textColor="#2D4343"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content" />
+
+         <ImageView
+             android:layout_marginRight="10dp"
+             android:src="@drawable/ic_right"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+     </LinearLayout>
+
+       <View
+           android:layout_marginTop="10dp"
+           android:layout_marginRight="10dp"
+           android:background="#E4E4E4"
+           android:layout_width="match_parent"
+           android:layout_height="1dp" />
+
+       <TextView
+           android:textColor="#0B302F"
+           android:textSize="20sp"
+           android:fontFamily="@font/poppins_semibold"
+           android:layout_marginTop="15dp"
+           android:text="Suhbatlar"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <LinearLayout
+           android:gravity="center_vertical"
+           android:layout_marginTop="8dp"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:layout_weight="1"
+               android:textSize="17sp"
+               android:text="Aktiv suhbatlar"
+               android:textColor="#2D4343"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content" />
+
+           <ImageView
+               android:layout_marginRight="10dp"
+               android:src="@drawable/ic_right"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+
+       <View
+           android:layout_marginTop="10dp"
+           android:layout_marginRight="10dp"
+           android:background="#E4E4E4"
+           android:layout_width="match_parent"
+           android:layout_height="1dp" />
+
+       <LinearLayout
+           android:gravity="center_vertical"
+           android:layout_marginTop="8dp"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:layout_weight="1"
+               android:textSize="17sp"
+               android:text="Arxivlangan"
+               android:textColor="#2D4343"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content" />
+
+           <ImageView
+               android:layout_marginRight="10dp"
+               android:src="@drawable/ic_right"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+
+       <View
+           android:layout_marginTop="10dp"
+           android:layout_marginRight="10dp"
+           android:background="#E4E4E4"
+           android:layout_width="match_parent"
+           android:layout_height="1dp" />
+
+
+       <TextView
+           android:textColor="#0B302F"
+           android:textSize="20sp"
+           android:fontFamily="@font/poppins_semibold"
+           android:layout_marginTop="15dp"
+           android:text="To'lovlar"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <LinearLayout
+           android:gravity="center_vertical"
+           android:layout_marginTop="8dp"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:layout_weight="1"
+               android:textSize="17sp"
+               android:text="Sizning hamyoninggiz"
+               android:textColor="#2D4343"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content" />
+
+           <ImageView
+               android:layout_marginRight="10dp"
+               android:src="@drawable/ic_right"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+
+       <View
+           android:layout_marginTop="10dp"
+           android:layout_marginRight="10dp"
+           android:background="#E4E4E4"
+           android:layout_width="match_parent"
+           android:layout_height="1dp" />
+
+       <LinearLayout
+           android:gravity="center_vertical"
+           android:layout_marginTop="8dp"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:layout_weight="1"
+               android:textSize="17sp"
+               android:text="To'lovlar tarixi"
+               android:textColor="#2D4343"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content" />
+
+           <ImageView
+               android:layout_marginRight="10dp"
+               android:src="@drawable/ic_right"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+
+       <View
+           android:layout_marginTop="10dp"
+           android:layout_marginRight="10dp"
+           android:background="#E4E4E4"
+           android:layout_width="match_parent"
+           android:layout_height="1dp" />
+
+       <TextView
+           android:textColor="#0B302F"
+           android:textSize="20sp"
+           android:fontFamily="@font/poppins_semibold"
+           android:layout_marginTop="15dp"
+           android:text="Sozlamar va boshqalar"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+
+       <LinearLayout
+           android:gravity="center_vertical"
+           android:layout_marginTop="8dp"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:layout_weight="1"
+               android:textSize="17sp"
+               android:text="Sozlamalar"
+               android:textColor="#2D4343"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content" />
+
+           <ImageView
+               android:layout_marginRight="10dp"
+               android:src="@drawable/ic_right"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+
+       <View
+           android:layout_marginTop="10dp"
+           android:layout_marginRight="10dp"
+           android:background="#E4E4E4"
+           android:layout_width="match_parent"
+           android:layout_height="1dp" />
+
+       <LinearLayout
+           android:gravity="center_vertical"
+           android:layout_marginTop="8dp"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:layout_weight="1"
+               android:textSize="17sp"
+               android:text="Yordam"
+               android:textColor="#2D4343"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content" />
+
+           <ImageView
+               android:layout_marginRight="10dp"
+               android:src="@drawable/ic_right"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+
+       <View
+           android:layout_marginTop="10dp"
+           android:layout_marginRight="10dp"
+           android:background="#E4E4E4"
+           android:layout_width="match_parent"
+           android:layout_height="1dp" />
+
+   </LinearLayout>
+
+</ScrollView>

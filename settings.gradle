@@ -1,0 +1,2 @@
+rootProject.name = "OlxClone"
+include ':app'

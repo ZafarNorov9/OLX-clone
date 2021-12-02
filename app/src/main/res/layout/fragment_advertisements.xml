@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.AdvertisementsFragment">
+
+
+    <!--    Searchbar-->
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="#F2F4F5"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:textSize="15sp"
+                android:textColorHint="#80002F34"
+                android:hint="Nimani qidiryabsiz?"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edit_text_search_bkg"
+                android:paddingLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="4dp"
+                app:cardBackgroundColor="@color/main_color"
+                android:layout_width="42dp"
+                android:layout_height="42dp" >
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_loupe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"
+                    android:text="Bo'limlar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp" />
+                <TextView
+                    android:id="@+id/all_types"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:text="Hammasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#E3E5E4"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/top_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="#F2F2F2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:textColor="@color/black"
+                    android:text="Tanlangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/stagger_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
+

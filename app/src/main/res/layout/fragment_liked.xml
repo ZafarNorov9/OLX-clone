@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="30dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.LikedFragment"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/Theme.OlxClone" >
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            app:statusBarScrim="@color/white1"
+            android:id="@+id/collapsing_toolbar"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:title="Saralanganlar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:background="#F3F4F6"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <com.google.android.material.tabs.TabLayout
+                app:tabTextAppearance="@style/TextAppearanceTablayout"
+                app:tabTextColor="#0F3132"
+                android:id="@+id/tab_layout"
+                app:tabIndicatorColor="#0F3132"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </com.google.android.material.tabs.TabLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="620dp" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
